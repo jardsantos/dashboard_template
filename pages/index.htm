@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboards Template</title>
+        <link rel="shortcut icon" href="../images/favicon.ico" />
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/custom-styles.css" rel="stylesheet"> 
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-side" role="navigation">
+        <div id="sideNav" href="">
+            <img src="../images/arrow.png" class="arrow">
+        </div>
+        <div class="sidebar-collapse">
+            <div class="brand">Dashboards</div>
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a class="active-menu" href=""><span class="square"></span>Dashboard 1</a>
+                </li>
+                <li>
+                    <a href=""><span class="square"></span>Dashboard 2</a>
+                </li>
+                <li>
+                    <a id="dropdown" href=""><span class="square"></span> Multi-Level Dropdown<img src="../images/arrow.png" class="arrow-white"></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a href="">Second Level Link</a>
+                        </li>
+                        <li>
+                            <a href="">Second Level Link</a>
+                        </li>
+                        <li>
+                            <a id="dropdown1" href="">Second Level Link<img src="../images/arrow.png" class="arrow-white"></a>
+                            <ul class="nav nav-third-level collapse">
+                                <li>
+                                    <a href="">Third Level Link</a>
+                                </li>
+                                <li>
+                                    <a href="">Third Level Link</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">Third Level Link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        </nav>
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row header">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                            Dashboard 1 <small>Analysis</small>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row header">
+                    <!-- DASH DIV -->
+                    <div class="bk-root" id="test_plot" data-root-id="4705925723885363430"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts-->
+    <script src="../scripts/jquery-1.10.2.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/jquery.metisMenu.js"></script>	
+    <script src="../scripts/custom-scripts.js"></script> 
+    <script src="../scripts/bokeh-2.3.0.min.js"></script>
+    <script src="../scripts/bokeh-widgets-2.3.0.min.js"></script>
+    <script src="../scripts/bokeh-tables-2.3.0.min.js"></script>
+<!-- DASHBOARD JS -->
+    <script>Bokeh.set_log_level("info");</script>
+    <script type="text/javascript" src="../scripts/test.js"></script>
